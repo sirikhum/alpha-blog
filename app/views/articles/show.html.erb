@@ -8,3 +8,9 @@ Showing selected article
 <p>
   Description: <%= @article.description %>
 </p>
+
+<p>
+  created at: <%= @article.created_at %> and last updated at: <%= @article.updated_at %>
+</p>
+<%= link_to "Edit this article", edit_article_path(@article) %> | 
+<%= link_to "Back to article listing", articles_path %>
